@@ -8,7 +8,7 @@ main:
 
 
 
-fib:
+fibonacci:
 	sub $sp,$sp,12
 	sw $ra,0($sp)
 	sw $s0,4($sp)
@@ -21,11 +21,11 @@ fib:
 	beq $s0,$t0,Exit2
 
 	sub $a0,$a0,1
-	jal fib
+	jal fibonacci
 
 	add $s1,$0,$v0
 	sub $a0,$s0,2
-	jal fib
+	jal fibonacci
 
 	add $v0,$v0,$s1
 
