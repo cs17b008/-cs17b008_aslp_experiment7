@@ -1,6 +1,6 @@
 main:
 	li $a0,6
-	jal fib
+	jal fibonacci
 
 	add $t4,$v0,$0
 	li $v0,10
